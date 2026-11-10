@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Converter - FREE Premium | Text to Image & AI Video Generator</title>
+
+<!-- AD 1 - Popunder -->
+<script data-cfasync="false" src="https://afders.org/1/0169bf3dffd769196fa82e93fe07c768"></script>
+<!-- AD 2 - Social Bar -->
+<script data-cfasync="false" src="https://bicea.org/14/938826b09dbddb97c4b8f4dd219327f3"></script>
+<!-- AD 6 - Asiafilm 1 -->
+<script data-cfasync="false" src="https://asiafilm.org/4/feeacf49b41c8da2ee288ab95ca81341"></script>
+<!-- AD 7 - Asiafilm 2 -->
+<script data-cfasync="false" src="https://asiafilm.org/4/f92ca653d967b8c494cd08df48bae990"></script>
+<!-- AD 8 - Asiafilm 3 -->
+<script data-cfasync="false" src="https://asiafilm.org/4/7cfa53943d23f37c0e06dffcedb19d3d"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<style>
+*{box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{margin:0;background:#0f172a;color:white;padding:12px}
+.top-banner{background:linear-gradient(90deg,#22c55e,#16a34a);padding:14px;border-radius:15px;text-align:center;max-width:650px;margin:0 auto 12px}
+.top-banner h2{margin:0;font-size:18px}
+.top-banner p{margin:4px 0 0;font-size:13px;color:#dcfce7;font-weight:600}
+.top-banner span{background:white;color:#16a34a;padding:2px 10px;border-radius:20px;font-size:11px;font-weight:800}
+.header{text-align:center}
+.header h1{font-size:26px;background:linear-gradient(90deg,#f43f5e,#a855f7,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:5px 0}
+.card{background:#1e293b;padding:16px;border-radius:18px;max-width:650px;margin:12px auto;border:1px solid #334155}
+textarea,input,select{width:100%;padding:12px;border-radius:12px;border:1px solid #334155;background:#0f172a;color:white;font-size:15px;margin-top:6px}
+.btn{width:100%;padding:14px;border:none;border-radius:13px;font-weight:800;font-size:16px;margin-top:12px;cursor:pointer;background:linear-gradient(90deg,#38bdf8,#a855f7);color:white}
+.btn.gold{background:linear-gradient(90deg,#facc15,#f97316);color:black}
+.btn.green{background:#22c55e}
+.btn.white{background:white;color:black}
+canvas{width:100%;border-radius:15px;margin-top:12px;background:white;display:none}
+video{width:100%;border-radius:15px;margin-top:12px;display:none}
+img{width:100%;border-radius:12px;margin-top:10px;display:none}
+#output{background:#020617;padding:12px;border-radius:12px;margin-top:10px;white-space:pre-wrap;min-height:70px;border:1px dashed #38bdf8}
+.lock{opacity:.45;pointer-events:none;position:relative}
+.lock:after{content:"🔒 FREE Premium me Unlock - Sirf 10 Ads";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#facc15;color:black;padding:6px 10px;border-radius:20px;font-size:11px;font-weight:800;white-space:nowrap}
+.progress{height:12px;background:#334155;border-radius:20px;overflow:hidden;margin-top:8px}
+.progress div{height:100%;background:#22c55e;width:0%;transition:.3s}
+.tabs{display:flex;gap:8px;justify-content:center}
+.tabs button{flex:1;padding:11px;border:none;border-radius:12px;font-weight:700;background:#334155;color:white;cursor:pointer}
+.tabs button.active{background:#38bdf8;color:black}
+.box{display:none}.box.active{display:block}
+.trust{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.trust span{background:#1e293b;border:1px solid #22c55e;color:#bbf7d0;padding:5px 10px;border-radius:20px;font-size:11px;font-weight:700}
+.ad-box{text-align:center;max-width:650px;margin:10px auto;background:#1e293b;padding:8px;border-radius:12px;overflow:hidden}
+</style>
+</head>
+<body>
+
+<!-- BANNER 728x90 TOP -->
+<div class="ad-box">
+<script>atOptions = { 'key' : '30cd6d24cb21489f5d210a09aed801b0', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };</script>
+<script src="https://bicea.org/22/30cd6d24cb21489f5d210a09aed801b0"></script>
+</div>
+
+<div class="top-banner"><h2>🎉 PREMIUM 100% FREE HAI <span>NO PAYMENT</span></h2><p>💰 Paisa Nahi Dena • Sirf 10 Chote Ads Dekhne Hain = Premium Unlock</p></div>
+<div class="header"><h1>✨ PRO CONVERTER 👑</h1><div class="trust"><span>✅ No Payment</span><span>✅ No Card</span><span>✅ Sirf 10 Ads</span><span>✅ 1080p HD</span></div></div>
+
+<div class="card" id="authCard">
+<h3 style="text-align:center;margin:0">Login / Register</h3>
+<div class="tabs" style="margin-top:10px"><button class="active" onclick="showTab('login')">Login</button><button onclick="showTab('register')">Register</button><button onclick="showTab('phone')">Phone 📱</button></div>
+<div id="login" class="box active"><button class="btn white" onclick="googleLogin()">G - Sign in with Google</button><input type="email" id="lEmail" placeholder="Email لکھیں"><input type="password" id="lPass" placeholder="Password"><button class="btn" onclick="doLogin()">Login کریں</button><p id="lMsg"></p></div>
+<div id="register" class="box"><button class="btn white" onclick="googleLogin()">G - Google سے Register</button><input type="email" id="rEmail" placeholder="Email لکھیں"><input type="password" id="rPass1" placeholder="Password بنائیں"><input type="password" id="rPass2" placeholder="Password دوبارہ لکھیں - Verify"><button class="btn green" onclick="doRegister()">Register کریں</button><p id="rMsg"></p></div>
+<div id="phone" class="box"><input type="tel" id="phoneNum" placeholder="03XX-XXXXXXX"><button class="btn" onclick="sendCode()">کوڈ بھیجیں</button><div id="otpArea" style="display:none"><input type="text" id="otpInput" placeholder="4 ہندسوں والا کوڈ - ڈیمو: 1234"><button class="btn green" onclick="verifyCode()">Verify کریں</button></div><p id="pMsg"></p></div>
+</div>
+
+<div class="card" id="premiumCard" style="border:2px solid #facc15"><div style="text-align:center"><h3 style="margin:0;color:#facc15">👑 FREE PREMIUM LO</h3><p style="margin:5px 0"><b>For Premium Just Watch Only 10 Ads</b></p><div class="progress"><div id="bar"></div></div><p id="adCount" style="font-weight:800">0 / 10 Ads Watched</p><button class="btn gold" onclick="watchAd()">📺 FREE Premium Unlock Karo - Ad Dekho (<span id="left">10</span> Baaki)</button></div></div>
+
+<!-- MOBILE BANNER 320x50 -->
+<div class="ad-box"><p style="font-size:11px;color:#94a3b8;margin:0 0 5px">Sponsored</p><script>atOptions = { 'key' : 'be65ac3d816bfaf93b871ce35ba054ae', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };</script><script src="https://bicea.org/22/be65ac3d816bfaf93b871ce35ba054ae"></script></div>
+
+<div class="card" style="padding:10px"><div class="tabs"><button id="tb1" class="active" onclick="showTool(1)">📝 Text → Image</button><button id="tb2" onclick="showTool(2)">🖼️ Image → Text</button><button id="tb3" onclick="showTool(3)">🎬 AI Video</button></div></div>
+
+<!-- IMAGE GENERATOR -->
+<div id="tool1" class="card"><textarea id="txt" rows="3">Mera Pakistan Zindabad</textarea><div style="display:flex;gap:8px"><select id="bg"><option value="gradient1">Blue-Purple</option><option value="gradient2">Orange-Pink</option><option value="#ffffff">White</option><option value="#000000">Black</option></select><select id="tc"><option value="#ffffff">White Text</option><option value="#000000">Black Text</option><option value="#facc15">Yellow Text</option></select></div><div id="premiumFeatures" class="lock" style="margin-top:10px;border:1px dashed #facc15;padding:10px;border-radius:12px"><label>👑 Premium Fonts + HD + No Watermark</label><select><option>Gold Luxury</option><option>Neon Glow</option><option>Galaxy</option></select></div><input type="range" id="fs" min="25" max="80" value="48"><button class="btn" onclick="make()">✨ Generate Image</button><canvas id="cv" width="900" height="500"></canvas><button class="btn green" id="dl" style="display:none" onclick="downloadImg()">⬇️ Download Image</button><p id="wmNote" style="text-align:center;font-size:12px;color:#94a3b8">Free me watermark aayega. FREE Premium me No Watermark + HD.</p></div>
+
+<!-- MEDIUM RECTANGLE 300x250 -->
+<div class="ad-box"><p style="font-size:11px;color:#94a3b8;margin:0 0 5px">Sponsored</p><script>atOptions = { 'key' : '17681cb9f95853a4a97999bee3037de8', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src="https://bicea.org/22/17681cb9f95853a4a97999bee3037de8"></script></div>
+
+<!-- IMAGE TO TEXT -->
+<div id="tool2" class="card" style="display:none"><input type="file" accept="image/*" onchange="prev(event)"><img id="preview"><button class="btn" onclick="extract()">🔍 Text Nikalen</button><p id="status"></p><div id="output">Yahan text aayega...</div><button class="btn" style="background:#f59e0b;color:black" onclick="copyT()">📋 Copy Text</button></div>
+
+<!-- VIDEO GENERATOR -->
+<div id="tool3" class="card" style="display:none"><textarea id="vtxt" rows="2">Mera Pakistan Zindabad 🇵🇰</textarea><select id="dur"><option value="5000">5 Sec - Shorts</option><option value="10000">10 Sec - Reels</option><option value="15000">15 Sec - TikTok</option></select><button class="btn" style="background:linear-gradient(90deg,#f43f5e,#a855f7)" onclick="generateVideo()">🎬 Generate AI Video</button><p id="genStatus" style="text-align:center;color:#facc15"></p><canvas id="vcv" width="720" height="1280" style="background:black"></canvas><video id="vid" controls playsinline></video><button class="btn green" id="dlVBtn" style="display:none" onclick="downloadVideo()">⬇️ Download Video</button></div>
+
+<!-- BANNER 728x90 BOTTOM -->
+<div class="ad-box"><p style="font-size:11px;color:#94a3b8;margin:0 0 5px">Sponsored</p><script>atOptions = { 'key' : '30cd6d24cb21489f5d210a09aed801b0', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };</script><script src="https://bicea.org/22/30cd6d24cb21489f5d210a09aed801b0"></script></div>
+
+<!-- MOBILE BANNER 320x50 BOTTOM -->
+<div class="ad-box"><script>atOptions = { 'key' : 'be65ac3d816bfaf93b871ce35ba054ae', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };</script><script src="https://bicea.org/22/be65ac3d816bfaf93b871ce35ba054ae"></script></div>
+
+<script>
+let adsWatched=parseInt(localStorage.getItem('adsWatched')||'0');
+let isPremium=localStorage.getItem('isPremium')=='yes';
+updateUI();
+function showTab(n){ document.querySelectorAll('#authCard .box').forEach(b=>b.classList.remove('active')); document.getElementById(n).classList.add('active'); }
+function showTool(n){ [1,2,3].forEach(i=>{ document.getElementById('tool'+i).style.display=i==n?'block':'none'; document.getElementById('tb'+i).classList.toggle('active',i==n); }); }
+function updateUI(){
+ document.getElementById('bar').style.width=(adsWatched*10)+'%';
+ document.getElementById('adCount').innerText=adsWatched+' / 10 Ads Watched';
+ document.getElementById('left').innerText=10-adsWatched;
+ if(isPremium){
+   document.getElementById('premiumFeatures').classList.remove('lock');
+   document.getElementById('wmNote').innerText='👑 Premium Active - HD + No Watermark';
+   document.getElementById('premiumCard').innerHTML='<h3 style="text-align:center;color:#22c55e">✅ PREMIUM UNLOCKED - FREE 👑</h3>';
+ }
+}
+function watchAd(){
+  window.open('https://asiafilm.org/4/feeacf49b41c8da2ee288ab95ca81341', '_blank');
+  window.open('https://asiafilm.org/4/f92ca653d967b8c494cd08df48bae990', '_blank');
+  window.open('https://asiafilm.org/4/7cfa53943d23f37c0e06dffcedb19d3d', '_blank');
+  window.open('https://bicea.org/14/938826b09dbddb97c4b8f4dd219327f3', '_blank');
+  alert('Ad khul gaya hai... Ad ko dekh kar wapas aao, Count badh jayega!');
+  adsWatched++;
+  if(adsWatched>=10){ isPremium=true; localStorage.setItem('isPremium','yes'); alert('🎉 Mubarak! FREE Premium Unlock Ho Gaya!'); }
+  localStorage.setItem('adsWatched',adsWatched);
+  updateUI();
+}
+function googleLogin(){ alert('Google Login...'); document.getElementById('lMsg').innerText='✅ Google se Login ho gaya!'; }
+function doRegister(){ let e=document.getElementById('rEmail').value; let p1=document.getElementById('rPass1').value; let p2=document.getElementById('rPass2').value; if(!e||!p1){document.getElementById('rMsg').innerText='❌ Email aur Password likhen';return;} if(p1!==p2){document.getElementById('rMsg').innerText='❌ Dono Password same nahi';return;} localStorage.setItem('user_'+e,p1); document.getElementById('rMsg').innerText='✅ Register ho gaya! Ab Login karen'; }
+function doLogin(){ let e=document.getElementById('lEmail').value; let p=document.getElementById('lPass').value; if(localStorage.getItem('user_'+e)==p){document.getElementById('lMsg').innerText='✅ Login ho gaya! Welcome 👑';} else{document.getElementById('lMsg').innerText='❌ Email ya Password ghalat hai';} }
+function sendCode(){ if(document.getElementById('phoneNum').value.length<10){document.getElementById('pMsg').innerText='❌ Sahi number likhen';return;} document.getElementById('otpArea').style.display='block'; document.getElementById('pMsg').innerText='✅ Code bhej diya gaya hai (Demo: 1234)'; }
+function verifyCode(){ if(document.getElementById('otpInput').value=='1234'){document.getElementById('pMsg').innerText='✅ Phone Verify ho gaya! Login ho gaya 👑';} else{document.getElementById('pMsg').innerText='❌ Ghalat Code';} }
+function make(){ let text=document.getElementById('txt').value||'Hello'; let cv=document.getElementById('cv'); let ctx=cv.getContext('2d'); let bg=document.getElementById('bg').value; let tc=document.getElementById('tc').value; let fs=document.getElementById('fs').value; if(bg=='gradient1'){let g=ctx.createLinearGradient(0,0,900,500);g.addColorStop(0,'#0ea5e9');g.addColorStop(1,'#a855f7');ctx.fillStyle=g;} else if(bg=='gradient2'){let g=ctx.createLinearGradient(0,0,900,500);g.addColorStop(0,'#f97316');g.addColorStop(1,'#ec4899');ctx.fillStyle=g;} else ctx.fillStyle=bg; ctx.fillRect(0,0,900,500); ctx.fillStyle=tc; ctx.textAlign='center'; ctx.font=`800 ${fs}px Poppins`; let words=text.split(' '); let lines=[]; let line=''; words.forEach(w=>{let t=line+w+' '; if(ctx.measureText(t).width>780){lines.push(line); line=w+' ';} else line=t;}); lines.push(line); let y=250-(lines.length*30); lines.forEach((l,i)=>{ctx.fillText(l,450,y+i*65);}); if(!isPremium){ctx.font='600 18px Poppins'; ctx.fillStyle='rgba(255,255,255,0.7)'; ctx.fillText('Made with Pro Converter - FREE',450,470);} cv.style.display='block'; document.getElementById('dl').style.display='block'; }
+function downloadImg(){ let a=document.createElement('a'); a.download=isPremium?'premium-hd.png':'free-image.png'; a.href=document.getElementById('cv').toDataURL(); a.click(); }
+let imgUrl=''; function prev(e){ let f=e.target.files[0]; imgUrl=URL.createObjectURL(f); let p=document.getElementById('preview'); p.src=imgUrl; p.style.display='block'; }
+async function extract(){ if(!imgUrl){alert('Pehle image select karo');return;} document.getElementById('status').innerText='⏳ Text nikal raha hun...'; let r=await Tesseract.recognize(imgUrl,'eng+urd'); document.getElementById('output').innerText=r.data.text||'Koi text nahi mila'; document.getElementById('status').innerText='✅ Ho Gaya!'; }
+function copyT(){ navigator.clipboard.writeText(document.getElementById('output').innerText); alert('Copy Ho Gaya!'); }
+let recordedChunks=[], mediaRecorder=null;
+async function generateVideo(){ let text=document.getElementById('vtxt').value||'Hello'; let cv=document.getElementById('vcv'); let ctx=cv.getContext('2d'); let dur=parseInt(document.getElementById('dur').value); cv.style.display='block'; document.getElementById('genStatus').innerText='⏳ AI Video Ban Rahi Hai...'; let stream=cv.captureStream(30); recordedChunks=[]; mediaRecorder=new MediaRecorder(stream,{mimeType:'video/webm'}); mediaRecorder.ondataavailable=e=>{if(e.data.size>0) recordedChunks.push(e.data);}; mediaRecorder.onstop=()=>{ let blob=new Blob(recordedChunks,{type:'video/webm'}); let url=URL.createObjectURL(blob); let v=document.getElementById('vid'); v.src=url; v.style.display='block'; v.play(); document.getElementById('dlVBtn').style.display='block'; document.getElementById('genStatus').innerText='✅ Video Ready Hai!'; window._videoBlob=blob; }; mediaRecorder.start(); let start=Date.now(); function draw(){ let elapsed=Date.now()-start; let progress=elapsed/dur; if(progress>=1){mediaRecorder.stop();return;} let g=ctx.createLinearGradient(0,0,0,1280); g.addColorStop(0,'#0f172a'); g.addColorStop(1,'#7c3aed'); ctx.fillStyle=g; ctx.fillRect(0,0,720,1280); ctx.fillStyle='#f43f5e'; for(let i=0;i<25;i++){let x=(i*97+elapsed/8)%720; let y=(i*131+elapsed/5)%1280; ctx.beginPath(); ctx.arc(x,y,3,0,Math.PI*2); ctx.fill();} ctx.fillStyle='#fff'; ctx.textAlign='center'; ctx.font=`800 54px Poppins`; let words=text.split(' '); let lines=[]; let line=''; words.forEach(w=>{let t=line+w+' '; if(ctx.measureText(t).width>620){lines.push(line); line=w+' ';} else line=t;}); lines.push(line); let y=550-(lines.length*35); lines.forEach((l,i)=>{ctx.fillText(l,360,y+i*70);}); ctx.fillStyle='#fff'; ctx.fillRect(40,1150,640,8); ctx.fillStyle='#f43f5e'; ctx.fillRect(40,1150,640*progress,8); if(!isPremium){ctx.font='600 20px Poppins'; ctx.fillStyle='rgba(255,255,255,0.6)'; ctx.fillText('Made with Pro Converter - FREE',360,1240);} requestAnimationFrame(draw);} draw(); }
+function downloadVideo(){ if(!window._videoBlob){alert('Pehle video generate karo');return;} let a=document.createElement('a'); a.href=URL.createObjectURL(window._videoBlob); a.download=isPremium?'premium-hd-video.webm':'free-video.webm'; a.click(); }
+</script>
+</body>
+</html>
